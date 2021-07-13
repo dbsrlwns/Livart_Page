@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/*
+1. Reset 설정
+2. HTML에서 전체 레이아웃 구성
+    => CSS에서 가이드라인 적용
+3. CSS 작업영역 주석으로 나눔
+4. 각 영역에 대한 개별 작업
+*/
+
+/* 1. Reset 설정 */
+* {
+    color: #333;
+    /* 기본 텍스트 색상 */
+    font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* prefix, 프리픽스, 접두사 */
+}
+
+body {
+    background-color: #fff;
+    /* 배경색 흰색 적용 */
+}
+
+a:link {    /* <a href="URL"> 이 있는 a요소 */
+               /*  colon 콜론 link ,
+                    슈도 클래스 선택자 */
+    color: #888;
+}
+
+a:visited {   /* a요소를 클릭하여 URL의 위치에 
+                      다녀온 것을 지칭*/
+    color: #555;
+}
+
+a:hover {   /* a요소에 마우스 포인터를 올렸을 때 */
+    color: #555;
+}
+
+a:active {   /* a요소가 활성화되었을 때 */
+    color: #555;
+}
+
+img     { vertical-align: middle; }
+
+ul         { list-style: none; }
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #888;
+}
+.flexContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+#wrap {
+  width: 1160px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+#header {
+  text-align: center;
+}
+#header h1 {
+  margin: 30px 0;
+}
+
+#gnb {
+
+}
+#mainMenu {
+  justify-content: center;
+  margin: 20px 0;
+}
+#mainMenu .mainLi {
+
+}
+#mainMenu .mainLi a{
+  color: #555;
+  font-size: 14px;
+}
+#mainMenu .mainLi a:hover {
+  font-weight: bold;
+}
+#mainMenu .mainLi span {
+  border-right: 1px solid #555;
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  margin:  0 20px;
+  margin-top: 3px;
+}
+
+#main {
+  justify-content: space-between;
+}
+#main > div {
+
+}
+#goodsList {
+  width: 680px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#goodsList > table.goodsInfo {
+  width: 220px;
+  height: 50%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+.goodsImg {
+  
+}

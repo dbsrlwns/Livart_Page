@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+body {
+    height: 100000px;
+}
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+#gnb {
+    padding: 20px 0;
+}
+#mainMenu {
+    justify-content: center;
+}
+#mainMenu .mainLi {   
+    border-right: 1px solid #aaa;
+}
+#mainMenu .mainLi:hover {   
+    font-weight: bold;
+}
+#mainMenu .mainLi:last-child {
+    border-right: none;   
+}
+#mainMenu .mainLi > a {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#main {
+
+}
+#rightMenu {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#rightMenu > div {
+    margin-right: 10px;
+}
+.text {
+    font-size: 14px;
+    text-align: center;
+}
+.text > span {
+    color: #9d7f5f;  
+    line-height: 22px;
+}
+.price {
+    text-align: center;
+    color: #1b8584;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.price span {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1b8584;
+}
+#layerBG {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#layerBG > span {
+    font-size: 70px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+}
+#layerPopup {
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
