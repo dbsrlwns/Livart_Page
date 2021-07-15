@@ -10,53 +10,124 @@
 #header {
   text-align: center;
 }
+
 #header h1 {
   margin: 30px 0;
 }
 
-#gnb {
+#gnb {}
 
-}
 #mainMenu {
   justify-content: center;
   margin: 20px 0;
 }
-#mainMenu .mainLi {
 
-}
-#mainMenu .mainLi a{
+#mainMenu .mainLi {}
+
+#mainMenu .mainLi a {
   color: #555;
   font-size: 14px;
 }
+
 #mainMenu .mainLi a:hover {
   font-weight: bold;
 }
+
 #mainMenu .mainLi span {
   border-right: 1px solid #555;
   display: inline-block;
   width: 1px;
   height: 14px;
-  margin:  0 20px;
+  margin: 0 20px;
   margin-top: 3px;
 }
 
 #main {
   justify-content: space-between;
 }
-#main > div {
 
-}
+#main>div {}
+
 #goodsList {
   width: 680px;
   flex-wrap: wrap;
   justify-content: space-between;
+  cursor: pointer;
 }
-#goodsList > table.goodsInfo {
+
+#goodsList>table.goodsInfo {
   width: 220px;
   height: 50%;
+  text-align: center;
   border-collapse: collapse;
-  border: 1px solid #000;
 }
-.goodsImg {
-  
+
+#goodsList>table.goodsInfo .goodsName td {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.goodsName span {
+  color: #a57c50;
+  font-weight: bold;
+}
+
+.goodsPrice>td::after {
+  content: ' 원';
+}
+
+.goodsPrice td,
+span {
+  color: rgb(26, 148, 156);
+}
+
+.goodsPrice span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#layerBG {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#layerPopup {
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 4px solid #aaa;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#popGoodsName {
+  font-size: 20px;
+  margin: 10px 0;
+}
+#popGoodsPrice {
+  font-size: 24px;
+}
+#popGoodsPrice:after {
+  content: " 원";
+  font-size: 20px;
+  color: rgb(26, 148, 156)
+}
+.closeBtn {
+  position: relative;
+  top: 20px;
+  right: 30px;
+  color: #222;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  float: right;
+  cursor: pointer;
 }
